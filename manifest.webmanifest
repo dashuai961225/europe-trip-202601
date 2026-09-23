@@ -1,0 +1,25 @@
+{
+  "name": "欧洲秋日旅行",
+  "short_name": "欧洲行程",
+  "description": "离线可用的欧洲行程、交通提醒和拍照打卡指南",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F7F2E8",
+  "theme_color": "#176B87",
+  "icons": [
+    {
+      "src": "./assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

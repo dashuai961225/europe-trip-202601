@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#176B87">
+  <meta name="description" content="2026 年欧洲秋日旅行离线行程、交通提醒和拍照打卡指南">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <title>欧洲秋日旅行</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+  <header class="app-header">
+    <div><p class="eyebrow">随身旅行手账</p><h1>欧洲秋日旅行</h1></div>
+    <button type="button" id="install-app" hidden>安装</button>
+  </header>
+  <p id="connectivity-status" class="connectivity" aria-live="polite"></p>
+  <main id="main-content">
+    <section id="view-home" class="app-view" aria-labelledby="home-heading"></section>
+    <section id="view-itinerary" class="app-view" aria-labelledby="itinerary-heading" hidden></section>
+    <section id="view-spots" class="app-view" aria-labelledby="spots-heading" hidden></section>
+    <section id="view-checklist" class="app-view" aria-labelledby="checklist-heading" hidden></section>
+    <section id="ios-install-help" class="install-help" hidden aria-labelledby="ios-install-heading">
+      <h2 id="ios-install-heading">添加到主屏幕</h2>
+      <p>在 Safari 中点“分享”，再选择“添加到主屏幕”。</p>
+    </section>
+  </main>
+  <nav class="bottom-nav" aria-label="主导航">
+    <button type="button" data-view="home" aria-controls="view-home">首页</button>
+    <button type="button" data-view="itinerary" aria-controls="view-itinerary">行程</button>
+    <button type="button" data-view="spots" aria-controls="view-spots">打卡</button>
+    <button type="button" data-view="checklist" aria-controls="view-checklist">清单</button>
+  </nav>
+  <noscript><p class="noscript">请开启 JavaScript 以查看完整行程；页面提醒和清单保存需要 JavaScript。</p></noscript>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>

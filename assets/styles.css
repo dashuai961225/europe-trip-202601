@@ -205,6 +205,7 @@ main {
 
 .reminder,
 .next-event,
+.hotel-card,
 .day-card,
 .spot-card,
 .checklist-group,
@@ -233,15 +234,25 @@ main {
 
 .reminder h3,
 .next-event h3,
+.hotel-card h3,
 .spot-card h4 {
   margin-bottom: 0.25rem;
 }
 
 .reminder p,
 .next-event p,
+.hotel-card p,
 .spot-card p,
 .empty-state {
   margin-bottom: 0;
+}
+
+.hotel-card {
+  margin-block: 0.8rem;
+  padding: 0.8rem 1rem;
+  border-left: 4px solid var(--lake);
+  background: var(--lake-soft);
+  box-shadow: none;
 }
 
 .quick-actions {

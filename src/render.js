@@ -46,6 +46,7 @@ export function renderItinerary(days, activeDayId) {
       </summary>
       <div class="day-content">
         <p>${escapeHtml(day.summary)}</p>
+        ${day.hotel ? `<aside class="hotel-card"><h3>住宿</h3><p><strong>${escapeHtml(day.hotel.name)}</strong><br>${escapeHtml(day.hotel.address)}</p></aside>` : ''}
         <ol class="event-list">${day.events.map((event) => `<li class="event event--${escapeHtml(event.kind)}">
           <time datetime="${escapeHtml(`${day.date}T${event.time}`)}">${escapeHtml(event.time)}</time>
           <div><h3>${escapeHtml(event.title)}</h3><p>${escapeHtml(event.detail)}</p>${event.leadMinutes ? `<p class="lead-time">建议提前 ${escapeHtml(event.leadMinutes)} 分钟准备</p>` : ''}</div>
